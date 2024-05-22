@@ -1,0 +1,133 @@
+body {
+    min-height: 400px;
+    min-width: 1103px;
+    font-family: arial;
+}
+
+#wrapper {
+    position:absolute;
+    width: 1103px;
+    /*display:inline-block;*/
+    left: 50%;
+    margin-left: -551px;
+    top: 50%;
+    margin-top: -200px;
+}
+
+#cubeWrapper {
+    width: 400px;
+    height: 400px;
+    position:relative;
+    float: left;
+}
+
+#infoWrapper {
+    height: 360px;
+    width: 660px;
+    border: 1px solid silver;
+    position:relative;
+    float: right;
+    padding: 20px;
+}
+
+#statsWrapper {
+    display: none;
+    height: 360px;
+    width: 660px;
+    border: 1px solid silver;
+    position:relative;
+    float: right;
+    padding: 20px;
+}
+
+#cube {
+    cursor: -webkit-grab;
+    border: 1px solid silver;
+}
+
+.button {
+    float: left;
+    background-color: deepskyblue;
+    padding: 5px;
+    border: 1px solid deepskyblue;
+    border-radius: 8px;
+    margin: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gray {
+    background-color: gray;
+    border-color: gray;
+}
+
+.green {
+    background-color: forestgreen;
+    border-color: forestgreen;
+}
+
+.red {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.slider {
+    padding: 15px;
+    float: left;
+}
+
+#rangevalue {
+    float: left;
+    padding: 18px;
+    padding-left: 0;
+}
+
+.highlight {
+    background-color: yellow;
+    border:1px solid yellow;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#moves {
+    margin: 10px;
+}
+
+.move {
+    display: inline-block;
+    padding: 4px;
+}
+
+.nocount {
+    font-style: italic;
+    color: gray;
+}
+
+.heading {
+    padding: 4px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#chart {
+    position: relative;
+    float: right;
+}
+
+.computing {
+    display: none;
+    float: left;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#authors {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -20px;
+    font-size: 11px;
+}

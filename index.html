@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+    <title>Fridrich method Rubik's cube solver</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="plugins/Chart.js"></script>
+    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="lib/virtualrubik.js"></script>
+    <script type="text/javascript">includeVirtualRubik("lib");</script>
+</head>
+<body onload="attachVirtualRubik();">
+    <div id="wrapper">
+        <div id="cubeWrapper">
+            <canvas id="cube" class="virtualrubik" width="400" height="400"></canvas>
+        </div>
+        <div id="infoWrapper">
+            <div class="button scramble">Scramble</div>
+            <div class="button solve">Solve</div>
+            <div class="slider">
+                <input type="range" name="points" min="1" max="10" value="2" oninput="$('#rangevalue').html(value * 100 + ' ms'); document.getElementById('cube').virtualrubik.setTwistDuration(value * 100);">
+            </div>
+            <div id="rangevalue">200 ms</div>
+            <div class="button playpause">Play</div>
+            <div class="button stats gray">Stats</div>
+            <div style="clear:both"></div>
+            <div id="moves">
+            </div>
+        </div>
+        <div id="statsWrapper">
+            <div class="button back gray">Back</div>
+            <div class="button testCross">Cross</div>
+            <div class="button testF2L">F2L</div>
+            <div class="computing">Computing...</div>
+            <canvas id="chart" width="660" height="316"></canvas>
+        </div>
+        <div id="authors">Solver and player by Jakub Kočvara. WebGL Rubik's cube model by Werner Randelshofer.</div>
+    </div>
+</body>
+</html> 
